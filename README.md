@@ -1,7 +1,5 @@
 # 1. 目的
 利用爬虫抓取信息：今年只招收了一名学生的导师的教师主页中的研究方向。
-（喜欢这个小实验的话麻烦给我的GitHub点个小星星呀，这对我真的很重要）
-GitHub完整代码地址：https://github.com/Afterimages/python-spider-for-select-mentor-information
 # 2. 准备
 1. 准备一个excel表单，含有每个学生对应的导师
 2. 安装chrome driver和selenium （准备 Chrome 浏览器）
@@ -72,7 +70,7 @@ print(df)
 content = driver.execute_script("return window.getComputedStyle(arguments[0], '::before').getPropertyValue('content') + arguments[0].textContent + window.getComputedStyle(arguments[0], '::after').getPropertyValue('content');", div_element)
 
 ```
-完整代码请看我的GitHub仓库：https://github.com/Afterimages/python-spider-for-select-mentor-information，喜欢这个小实验的话请给我的GitHub仓库点个小星星哦，这对我真的很重要
+
 # 5. 遇到的问题
 1. ValueError: Timeout value connect was ……, but it must be an int, float or None
 解决方法：selenium库和urllib3库版本不兼容，将urllib3版本降低。
